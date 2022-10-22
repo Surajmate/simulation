@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { ApiService } from './service/api.service';
+import {
+  Component
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,6 @@ import { ApiService } from './service/api.service';
 })
 export class AppComponent {
   title = 'simulation';
-name: any
-  constructor(private api: ApiService){
-
-  }
-  ngOnInit(): void {
-    this.api.getdata().subscribe((data:any)=>{
-      this.name =data.result.name
-    })
-  }
+  constructor() {}
+  ngOnInit(): void {}
 }
