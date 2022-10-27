@@ -979,7 +979,8 @@ html {
     padding: 10px 0px !important;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
     color: #fff !important;
-    background: #fff
+    background: #fff;
+    background-color: transparent;
   }
 
   .navbar-custom .navbar-nav {
