@@ -450,9 +450,9 @@ legend {
   }
 }
 
-legend+* {
+/* legend+* {
   clear: left
-}
+} */
 
 ::-webkit-datetime-edit-day-field,
 ::-webkit-datetime-edit-fields-wrapper,
