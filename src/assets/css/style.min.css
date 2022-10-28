@@ -885,7 +885,7 @@ html {
 }
 
 .bg-home {
-  background-image: url(../images/home/bg.jpg);
+  background-image: url(../bg.jpg);
   background-size: cover;
   height: 100vh;
   background-attachment: fixed
@@ -1182,7 +1182,7 @@ html {
 }
 
 .bg-counter {
-  background-image: url("../images/home/bg-2.jpg");
+  background-image: url("../bg-2.jpg");
   background-position: top;
   background-size: cover;
   padding: 80px 0;
@@ -1190,7 +1190,7 @@ html {
 }
 
 .bg-map {
-  background-image: url(../images/map.png);
+  background-image: url(../map.png);
   position: relative;
   background-position: center
 }
