@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
 import { LayoutRoutingModule } from './layout/layout-routing.module';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LayoutRoutingModule } from './layout/layout-routing.module';
     HttpClientModule,
     LayoutRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    PopoverModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

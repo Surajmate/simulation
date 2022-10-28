@@ -24,9 +24,9 @@
              <li class="nav-item">
                  <a class="nav-link" href="#work">Work</a>
              </li>
-             <li class="nav-item">
+             <!-- <li class="nav-item">
                  <a class="nav-link" href="#pricing">Pricing</a>
-             </li>
+             </li> -->
              <li class="nav-item">
                  <a class="nav-link" href="#client">Clients</a>
              </li>
@@ -39,6 +39,21 @@
              <li class="nav-item">
                  <a class="nav-link" href="#contact">Contact</a>
              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" [popover]="popTemplate1" [outsideClick]="true" placement="bottom">Login</a>
+             </li> 
+             <li *ngIf="username" class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">| {{username}}</a>
+             </li>
+              <ng-container>
+                <ng-template #popTemplate1>
+                 <div class="col-12">
+                    <input type="text" class="form-control" name="data" placeholder="Username" [(ngModel)]="email">
+                    <input type="password" class="form-control my-2" name="data" placeholder="Password" [(ngModel)]="password">
+                    <button type="submit" class="btn btn-primary text-uppercase rounded-pill w-100" (click)="login()">Login</button>
+                 </div>
+                </ng-template>
+              </ng-container>
          </ul>
 
      </div>
@@ -55,7 +70,7 @@
          <div class="container home">
              <div class="row align-items-center">
                  <div class="col-md-12 text-center">
-                     <i class="pe-7s-leaf title-icon fs-36 text-primary"></i>
+                     <i class="pe-7s-leaf title-icon fs-36 text-white"></i>
                      <p class="text-center home-title text-white">Clean &amp; Professional Multipurpose Platform</p>
                      <p class="text-center pt-3 home-sub-title text-white-50 fs-18">Lorem ipsum dolor sit amet,
                          consectetur adipiscing elit. Sed feugiat arcu ut orci porta, <br>eget porttitor felis
@@ -1177,7 +1192,7 @@
              </div>
 
              <div class="col-lg-3 mt-5 mt-lg-0">
-                 <h5 class="text-white">Cusomer</h5>
+                 <h5 class="text-white">Customer</h5>
                  <ul class="list-unstyled footer-list mt-4">
                      <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
                                  class="mdi mdi-chevron-right me-1"></i>About us</a></li>
@@ -1195,8 +1210,8 @@
                  <ul class="list-unstyled footer-list mt-4">
                      <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
                                  class="mdi mdi-chevron-right me-1"></i>Form validation</a></li>
-                     <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
-                                 class="mdi mdi-chevron-right me-1"></i>Pricing</a></li>
+                     <!-- <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
+                                 class="mdi mdi-chevron-right me-1"></i>Pricing</a></li> -->
                      <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
                                  class="mdi mdi-chevron-right me-1"></i>Terms & Conditions</a></li>
                      <li class="mt-2"><a href="javascript:void(0)" class="text-white-50"><i
