@@ -981,6 +981,7 @@ html {
     color: #fff !important;
     background: #fff;
     background-color: transparent;
+    backdrop-filter: blur(10px);
   }
 
   .navbar-custom .navbar-nav {
@@ -994,7 +995,7 @@ html {
   .navbar-custom .navbar-nav li a {
     transition: all 0.4s;
     margin: 6px;
-    color: #1a273b !important;
+    /* color: #1a273b !important; */
     padding: 6px 0
   }
 
@@ -1031,8 +1032,11 @@ html {
   }
 
   .logo {
-    color: #1a273b !important
+    /* color: #1a273b !important */
   }
+}
+.navbar-toggler>span{
+  color: #b8b8b8 !important;
 }
 
 @media (min-width: 1200px) {

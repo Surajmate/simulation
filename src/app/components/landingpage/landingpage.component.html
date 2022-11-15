@@ -1,66 +1,4 @@
- <!-- START  NAVBAR -->
- <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-light fixed-top top-0 border-bottom border-white-50"
- id="navbar">
- <div class="container">
-
-     <!-- LOGO -->
-     <a class="navbar-brand logo text-uppercase fw-bold fs-24 text-logo" href="#">
-        <img src="assets/Solana_logo.png" style="width: 40px;" alt="" srcset=""> Simulation
-     </a>
-
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="mdi mdi-menu"></span>
-     </button>
-
-     <div class="collapse navbar-collapse" id="navbarCollapse">
-         <ul class="navbar-nav ms-auto" id="navbar-navlist">
-             <li class="nav-item">
-                 <a class="nav-link" href="#home">Home</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#services">Services</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#work">Work</a>
-             </li>
-             <!-- <li class="nav-item">
-                 <a class="nav-link" href="#pricing">Pricing</a>
-             </li> -->
-             <li class="nav-item">
-                 <a class="nav-link" href="#client">Clients</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#team">Team</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#blog">Blog</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#contact">Contact</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)" [popover]="popTemplate1" [outsideClick]="true" placement="bottom">Login</a>
-             </li> 
-             <li *ngIf="username" class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">| {{username}}</a>
-             </li>
-              <ng-container>
-                <ng-template #popTemplate1>
-                 <div class="col-12">
-                    <input type="text" class="form-control" name="data" placeholder="Username" [(ngModel)]="email">
-                    <input type="password" class="form-control my-2" name="data" placeholder="Password" [(ngModel)]="password">
-                    <button type="submit" class="btn btn-primary text-uppercase rounded-pill w-100" (click)="login()">Login</button>
-                 </div>
-                </ng-template>
-              </ng-container>
-         </ul>
-
-     </div>
- </div>
-</nav>
-<!-- END NAVBAR -->
-
+<app-header></app-header>
 
 <!-- start home -->
 <section class="section bg-home height-100" id="home">
@@ -106,6 +44,118 @@
 </section>
 <!-- end home -->
 
+<!-- start Platforms -->
+<!-- <section class="section" id="Platforms">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="service-heading text-center mb-5">
+                    <h6 class="text-uppercase text-muted mb-0 fs-14">Our Platforms</h6>
+                    <h2>Tranding Platforms</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">Study Materials</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">Developers Guide</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">e-Ticketing</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">Hotels</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">Tourism</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body blog-body">
+                        <div class="d-flex flex-column h-100">
+                            <p class="fw-semibold mb-2 text-muted">Crafts</p>
+                            <h5 class="card-title">Miscellaneous</h5>
+                            <div class="mt-auto">
+                                <img src="assets/Solana_logo.png" class="blog-img rounded-circle avatar-sm"
+                                    alt="">
+                                <p class="d-inline ms-2"> by Simulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- end Platforms -->
 
 <!--start service-->
 <section class="section bg-light d-flex align-items-center" id="services">
@@ -217,7 +267,6 @@
  <!--end container-->
 </section>
 <!--end service-->
-
 
 <!-- start work section -->
 <section class="section" id="work">
@@ -657,7 +706,6 @@
 </section>
 <!-- end work section -->
 
-
 <!-- start pricing -->
 <!-- <section class="section bg-light" id="pricing">
  <div class="container">
@@ -868,7 +916,6 @@
 </section>
 <!-- end testimonial -->
 
-
 <!-- About START-->
 <section class="section bg-light" id="team">
  <div class="container">
@@ -938,7 +985,6 @@
 </section>
 <!-- About END-->
 
-
 <!--start counter-->
 <section class="bg-counter">
  <div class="bg-overlay"></div>
@@ -996,7 +1042,6 @@
 </section>
 <!--end counter-->
 
-
 <!-- start blog -->
 <section class="section" id="blog">
  <div class="container">
@@ -1015,7 +1060,7 @@
          <!-- blog 1 -->
          <div class="col-lg-4">
              <div class="card border-0 shadow-sm">
-                 <img src="assets/images/blog/img-1.jpg" class="card-img-top img-fluid" alt="">
+                 <img src="assets/img-1.jpg" class="card-img-top img-fluid" alt="">
                  <div class="card-body blog-body">
                      <div class="d-flex flex-column h-100">
                          <p class="fw-semibold mb-2 text-muted">Crafts</p>
@@ -1025,7 +1070,7 @@
                          <div class="mt-auto">
                              <img src="assets/avatar-1.jpg" class="blog-img rounded-circle avatar-sm"
                                  alt="">
-                             <p class="d-inline ms-2"> by Sabato Alterio</p>
+                             <p class="d-inline ms-2"> by Simulation</p>
                          </div>
                      </div>
                  </div>
@@ -1034,7 +1079,7 @@
          <!-- blog 2 -->
          <div class="col-lg-4">
              <div class="card border-0 shadow-sm">
-                 <img src="assets/images/blog/img-2.jpg" class="card-img-top img-fluid" alt="">
+                 <img src="assets/img-2.jpg" class="card-img-top img-fluid" alt="">
                  <div class="card-body blog-body">
                      <p class="fw-semibold mb-2 text-muted">Book</p>
                      <h5 class="card-title">The Everlast Notebook</h5>
@@ -1050,7 +1095,7 @@
          <!-- blog 3 -->
          <div class="col-lg-4">
              <div class="card border-0 shadow-sm">
-                 <img src="assets/images/blog/img-3.jpg" class="card-img-top img-fluid" alt="">
+                 <img src="assets/img-3.jpg" class="card-img-top img-fluid" alt="">
                  <div class="card-body blog-body">
                      <div class="d-flex flex-column h-100">
                          <p class="fw-semibold mb-2 text-muted">Perfomances</p>
@@ -1070,8 +1115,6 @@
  </div>
 </section>
 <!-- end blog -->
-
-
 
 <!-- start section -->
 <section class="section bg-light" id="contact">
