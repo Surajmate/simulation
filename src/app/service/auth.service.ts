@@ -7,10 +7,11 @@ export class AuthService {
 
   constructor() { }
   getisLoggedIn(){
-    return (this.getToken() != null) ? true : false;
+    console.log(localStorage.getItem('accessToken'));
+    return this.getToken() ? true : false;
   }
 
   getToken(){
-    return localStorage.getItem('token');
+    return localStorage.getItem('accessToken');
   }
 }
