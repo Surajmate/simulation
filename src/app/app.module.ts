@@ -13,6 +13,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { TutorialsComponent } from './components/tutorials/tutorials.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SignupComponent } from './components/signup/signup.component';
     FooterComponent,
     SigninComponent,
     SignupComponent,
+    TutorialsComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
