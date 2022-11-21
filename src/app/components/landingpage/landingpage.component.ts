@@ -27,37 +27,4 @@ export class LandingpageComponent implements OnInit {
       this.name = data.result.name
     })
   }
-
-  login(){
-    this.api.login({
-      "email": this.email, //"c@c.com"
-      "password": this.password //"Suraj@123"
-    }).subscribe((obj: any)=>{
-      if(obj.status == 200){
-        localStorage.setItem('user_info',JSON.stringify(obj))
-        this.email = ''
-        this.password = ''
-      }else{
-        alert(obj.message)
-      }
-    })
-  }
-
-  register(){
-    this.api.register({
-      "name": "Raj",
-      "email": "raj3@gmail.com",
-      "username": "Raj",
-      "contact": "1231231231",
-      "address": "1231231231 esrhtrtg fdgbndfg ",
-      "password": "Raj@123"
-  }).subscribe((obj: any)=>{
-    if(obj.status == 200){
-
-    }else{
-
-    }
-  })
-  }
-
 }

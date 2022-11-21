@@ -41,7 +41,7 @@
              </li>
              <li *ngIf="username" class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/user1.png" style="width: 20px;" alt="" srcset=""> | {{username}}
+                    <span class="badge rounded-pinn bg-primary text-white">{{avatar}}</span> | {{username}} 
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item dark" href="javascript:void(0)" (click)="logout()">Logout</a></li>

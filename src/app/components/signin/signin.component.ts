@@ -26,11 +26,12 @@ export class SigninComponent implements OnInit {
 
   login(){
     this.api.login({
-      "email": this.email, //"c@c.com"
-      "password": this.password //"Suraj@123"
+      "email": window.btoa(this.email), //"c@c.com"
+      "password": window.btoa(this.password) //"Suraj@123"
     }).subscribe((obj: any)=>{
       if(obj.status == 200){
         localStorage.setItem('accessToken', obj.result.accessToken)
+        localStorage.setItem('username', obj.result.userData.name)
         localStorage.setItem('user_info',JSON.stringify(obj))
         this.email = ''
         this.password = ''
