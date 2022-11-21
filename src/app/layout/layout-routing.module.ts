@@ -12,12 +12,13 @@ const routes: Routes = [
   },{
     path: 'signup',
     component: SignupComponent
-  },{
+  },
+
+  {
     path: 'home',
-    component: DashboardComponent
-  },{
-    path: '',
-    component: DashboardComponent
+    component: DashboardComponent,
+children:[
+  {path: '', component: DashboardComponent}]
   }
 ];
 
