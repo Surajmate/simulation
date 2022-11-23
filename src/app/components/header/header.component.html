@@ -37,8 +37,11 @@
                  <a class="nav-link" href="#blog">Blog</a>
              </li>
              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
+            </li>
+             <!-- <li class="nav-item">
                  <a class="nav-link" href="#contact">Contact</a>
-             </li>
+             </li> -->
              <li *ngIf="username" class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="badge rounded-pinn bg-primary text-white">{{avatar}}</span> | {{username}} 
