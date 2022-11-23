@@ -1,0 +1,35 @@
+.signin{
+    background: url(../../../assets/sunset-global-ocean-extreme-heat.jpg);
+    background-repeat: none;
+    background-position: fixed;
+    width: 100%;
+    background-size: cover;
+    height: 690px;
+    color: white;
+    font-weight: 900;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  input, input:focus, input:focus-visible{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    box-shadow: none
+  }
+
+//   input::placeholder{
+//     color: white;
+//   }
+  

@@ -1,0 +1,14 @@
+<div class="bg-light container-fluid signin">
+    <form action="" class="w-25">
+        <h5 class="text-center">Signup <img src="assets/Solana_logo.png" style="width: 30px;" alt="" srcset=""> Simulation</h5>
+        <input type="text" class="form-control mt-2" name="data" placeholder="Full Name" [(ngModel)]="fullName" value="">
+        <input type="text" class="form-control mt-2" name="data" placeholder="Username" [(ngModel)]="username" value="">
+        <input type="email" class="form-control mt-2" name="data" placeholder="Email" [(ngModel)]="email" value="">
+        <input type="number" class="form-control mt-2" name="data" placeholder="Contact" [(ngModel)]="contact" value="">
+        <input type="text" class="form-control mt-2" name="data" placeholder="Address" [(ngModel)]="address" value="">
+        <input type="password" class="form-control mt-2" name="data" placeholder="Password" [(ngModel)]="password" value="">
+        <input type="password" class="form-control mt-2" name="data" placeholder="Confirm Password" [(ngModel)]="con_password" value="">
+        <button class="btn btn-outline-primary mt-3 rounded-pill w-100" (click)="register()">Register</button>
+        <p class="text-center mt-3">Already Have An Account? <span class="text-primary pointer" [routerLink]="'/signin'">Signin</span></p>
+    </form>
+</div>
