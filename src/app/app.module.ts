@@ -15,6 +15,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { TutorialsComponent } from './components/tutorials/tutorials.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     SignupComponent,
     TutorialsComponent,
     PagenotfoundComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
