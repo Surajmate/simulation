@@ -26,7 +26,7 @@ export class TutorialsComponent implements OnInit {
       name: 'Laravel'
     },
     {
-      name: 'Node'
+      name: 'Node JS'
     },
     {
       name: 'React'
@@ -44,16 +44,22 @@ export class TutorialsComponent implements OnInit {
       name: 'MySQL'
     },
     {
-      name: 'MySQL'
+      name: 'Ionic'
     },
     {
-      name: 'MySQL'
+      name: 'Flutter'
     },
     {
-      name: 'MySQL'
+      name: 'Kotlin'
     },
     {
-      name: 'MySQL'
+      name: 'Oracle'
+    },
+    {
+      name: 'C'
+    },
+    {
+      name: 'C++'
     },
   ];
 
