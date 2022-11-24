@@ -1,0 +1,74 @@
+<!-- <p>contact works!</p> -->
+
+<section class="section bg-dark" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="service-heading text-center mb-5">
+                    <h6 class="text-uppercase text-muted mb-0 fs-14">Contact</h6>
+                    <h2>Get In Touch</h2>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+   
+        <div class="row align-items-end">
+            <div class="col-lg-12 mt-sm-0 pt-2 pt-sm-0 mb-4 mb-md-0">
+                <div class="custom-form mt-4">
+                    <form method="post" name="myForm" onsubmit="return validateForm()" autocomplete="off">
+                        <p id="error-msg" style="opacity: 1;">
+                            <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                        </p>
+                        <div id="simple-msg"></div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group mt-2">
+                                    <input name="name" id="name" type="text" class="form-control contact-form"
+                                        placeholder="Your name" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group mt-2">
+                                    <input name="email" id="email" type="email" class="form-control contact-form"
+                                        placeholder="Your email" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group mt-2">
+                                    <input name="password" id="password" type="password" autocomplete="off" value=""
+                                        class="form-control contact-form" placeholder="Your password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <input type="text" class="form-control contact-form" id="subject" autocomplete="off" value=""
+                                        placeholder="Your Subject..">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <textarea name="comments" id="comments" rows="4"
+                                        class="form-control contact-form h-auto" autocomplete="off"
+                                        placeholder="Your message..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-12">
+                                <input type="submit" id="submit" name="send" autocomplete="off"
+                                    class="submitBnt btn rounded-pill btn-primary" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--end custom-form-->
+            </div>
+            <!--end col-->
+        </div>
+    </div>
+   </section>
