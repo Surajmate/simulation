@@ -16,8 +16,6 @@ const routes: Routes = [
     path: 'signup',
     component: SignupComponent
   },
-  // {path: '**', component: PagenotfoundComponent},
-  
   {path: '', component: DashboardComponent},
   {path: 'tutorials', component: TutorialsComponent},
   {
@@ -27,7 +25,9 @@ const routes: Routes = [
       {path: '', component: DashboardComponent},
       {path: 'home', component: DashboardComponent},
     ],canActivate:[AuthGuard]
-  }
+  },
+  {path: '**', redirectTo : '/404'},
+  {path: '404', component: PagenotfoundComponent},
 ];
 
 @NgModule({

@@ -15,37 +15,37 @@ import {
 export class ApiService {
 
   url: String = "http://localhost:3999/"
+
   header = {
     "Content-Type": "application/json",
     "Authorization": localStorage.getItem("token"),
   }
+
   no_token_header = {
     "Content-Type": "application/json",
   }
 
-  constructor(private http: HttpClient, private router: Router) {}
+  headers = new HttpHeaders().set(
+    'Authorization', 'Bearer ' + localStorage.getItem("token")
+  );
+
+  constructor(private http: HttpClient) {}
 
   getdata() {
-    const headers = new HttpHeaders()
-      .set('Authorization', 'Bearer ' + localStorage.getItem("token"));
     return this.http.get(this.url + "users/user_data", {
-      'headers': headers
+      'headers': this.headers
     });
   }
 
   login(data: any) {
-    const headers = new HttpHeaders()
-      .set('Authorization', 'Bearer ' + localStorage.getItem("token"));
     return this.http.post(this.url + "users/login", data, {
-      'headers': headers
+      'headers': this.headers
     });
   }
 
   register(data: any) {
-    const headers = new HttpHeaders()
-      .set('Authorization', 'Bearer ' + localStorage.getItem("token"));
     return this.http.post(this.url + "users/register", data, {
-      'headers': headers
+      'headers': this.headers
     });
   }
 

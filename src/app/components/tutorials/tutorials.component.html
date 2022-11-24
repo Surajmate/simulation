@@ -1,3 +1,18 @@
-<section class="pt-100 text-white">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima, possimus fugit at necessitatibus corrupti magni consectetur officia dolore, veritatis, quidem repudiandae nesciunt facere voluptatibus distinctio voluptas! Nisi, libero mollitia.
+<img src="../../../assets/head_back.jpg" style="width: 100%; height: 90px;" alt="">
+<section class="">
+  <div class="col-md-12 col-12">
+    <div class="row">
+      <div class="col-md-2 col-12">
+        <dl style="max-height: 600px; overflow-y: scroll; padding: 10px; background-color: rgba(0, 0, 0, 0.045); margin: 0;">
+          <p *ngFor="let item of tutorials"><a href="javascript:void(0);" (click)="fetch_tutorial(item.name)">{{item.name}}</a></p>
+        </dl>
+      </div>
+      <div class="col-md-8 col-12">
+        <p [innerHTML]="tutorial_content"></p>
+      </div>
+      <div class="col-md-2 col-12">
+        <img src="../../../assets/banner1.gif" style="max-height: 600px; width: 100%;" alt="">
+      </div>
+    </div>
+  </div>
 </section>
